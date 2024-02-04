@@ -167,27 +167,45 @@ header button:hover {
 
 /* Improved Styles for Mobile Devices */
 @media only screen and (max-width: 600px) {
-  /* Adjust the width of input fields and text areas */
-  input[type="text"], textarea {
-    width: 90%; /* or 100% depending on the desired padding */
-    margin: 0.5em auto;
+  /* Ensure that the body does not have a fixed width or margins that cause overflow */
+  body {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Set the width of form elements to be responsive and centered */
+  input[type="text"], textarea, select {
+    width: calc(100% - 20px); /* Assuming a total padding of 20px */
+    box-sizing: border-box; /* Include padding and border in the element's width */
+    margin: 10px auto; /* Vertical margin with auto horizontal margin for centering */
     display: block;
   }
 
-  /* Style the radio buttons */
+  /* Align radio buttons and labels properly */
+  label {
+    display: block;
+    margin: 10px auto;
+  }
+
   input[type="radio"] {
-    margin: 0.5em;
+    margin: 0 5px 0 0;
   }
 
-  /* Adjust the size and margin of buttons */
+  /* Style the buttons to fit within the view and to be centered */
   button {
-    width: 90%; /* or 100% depending on the desired padding */
-    margin: 0.5em auto;
+    width: calc(100% - 20px); /* Adjust button width */
+    margin: 10px auto; /* Center the button with auto margins */
     display: block;
   }
 
-  /* Any other adjustments for smaller screens */
-  /* ... */
-}
+  /* Adjust the layout of the elements to prevent horizontal overflow */
+  .container, .row, .column, .form-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-      
+  /* Additional styles if needed */
+}
