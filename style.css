@@ -164,42 +164,74 @@ header button:hover {
     opacity: 0.8;
 }
 
+
 /* Improved Styles for Mobile Devices */
 @media (max-width: 768px) {
 
-    /* Adjust the container to stack its children vertically */
-    .container {
-        flex-direction: column;
-        margin-left: 0;
-        padding: 8px;
-    }
-
-    /* Adjust form inputs, selects, and textareas to take full width */
-    input[type=text],
-    input[type=date],
-    select,
-    textarea {
+    /* Ensure everything is contained within the viewport width */
+    html,
+    body {
         width: 100%;
-        margin: 8px 0;
+        overflow-x: hidden;
+        /* Prevent horizontal scroll */
     }
 
-    /* Adjust the submit and button elements to be full width and properly spaced */
+    /* Ensure the header, navigation, and footer are 100% width */
+    header,
+    nav,
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+        /* Include padding and border in the width */
+    }
+
+    /* Navigation list to be full width */
+    nav ul {
+        width: 100%;
+        padding: 0;
+        /* Remove padding */
+        margin: 0;
+        /* Remove margins */
+        list-style: none;
+        /* Remove list styles */
+        display: flex;
+        justify-content: space-around;
+        /* Distribute space evenly */
+        align-items: center;
+        /* Center items vertically */
+        flex-wrap: wrap;
+        /* Allow items to wrap */
+    }
+
+    nav li {
+        width: 100%;
+        /* Full width navigation items */
+        text-align: center;
+        /* Center text */
+    }
+
+    nav a {
+        padding: 10px 0;
+        /* Increase padding for tap targets */
+        display: block;
+        /* Block level links for easier tap */
+    }
+
+    /* Remove any floats on buttons and align them centrally */
+    header button,
     input[type=submit],
     input[type=button] {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 10px;
+        float: none;
+        display: block;
+        width: auto;
+        margin: 10px auto;
+        /* Center align */
     }
 
-    /* Ensure the patient form adapts to a vertical layout */
-    #patientForm {
-        flex-direction: column;
+    /* Adjust the footer to stick to the bottom and be full width */
+    footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
     }
-
-    /* Adjust left and right parts of the form to take full width */
-    .leftpart,
-    .rightpart {
-        max-width: 100%;
-    }
-
 }
