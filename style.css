@@ -315,9 +315,9 @@ nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 10px;
+    padding: 5px;
     display: inline-block;
-    font-size: 17px;
+    font-size: 14px;
     
 }
 
@@ -348,68 +348,6 @@ header button:hover {
 
 /* Improved Styles for Mobile Devices */
 /* Improved Styles for Mobile Devices */
-@media only screen and (max-width: 600px) {
-    /* Adjust styles for mobile screens here */
-    .container {
-        margin-left: 2%; /* Adjust margin for smaller screens */
-    }
-
-    input[type=submit],
-    input[type=button] {
-        width: 40%; /* Adjust button width for mobile screens */
-        margin-left: 10%; /* Adjust button margin for mobile screens */
-    }
-
-    input[type=button] {
-        margin-left: 30%; /* Adjust button margin for mobile screens */
-    }
-
-    #patientForm {
-        flex-direction: column; /* Stack form elements vertically on mobile */
-    }
-
-    .leftpart,
-    .rightpart {
-        max-width: 100%; /* Allow content to take full width on mobile */
-    }
-
-    header img {
-        height: 60px; /* Adjust header image size for mobile screens */
-        width: 70px; /* Adjust header image size for mobile screens */
-    }
-
-    header h2 {
-        font-size: 20px; /* Adjust header text size for mobile screens */
-        margin-left: 10%; /* Adjust header text margin for mobile screens */
-    }
-
-    nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-    nav li {
-        margin-right: 0; /* Remove margin between navigation links on mobile */
-        list-style: none; /* Remove default list style */
-    }
-
-    nav a {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        padding: 5px;
-        display: inline-block;
-        font-size: 14px;
-        border-radius: 6px; /* Add rounded corners to navigation links */
-        margin: 5px; /* Add margin to space navigation links */
-    }
-
-    header button {
-        width: 60%; /* Adjust button width for mobile screens */
-        margin-left: 20%; /* Adjust button margin for mobile screens */
-    }
-}
 
 
 
