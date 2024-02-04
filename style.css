@@ -176,66 +176,22 @@ header button:hover {
         padding: 0;
     }
 
+    .container {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
  
-
-    input[type=text],
-    input[type=date],
-    select,
-    textarea {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-        border-radius: 10px;
-        background-color: #F4F4F5;
-    }
-
-    input[type=radio] {
-        margin: 10px 0;
-    }
-
-    input[type=submit],
-    input[type=button] {
-        background-color: #119988;
-        color: white;
-        padding: 14px 20px;
-        margin-top: 5%;
-        border: none;
-        cursor: pointer;
-        width: 20%;
-        float: left;
-        border-radius: 15px;
-        margin-left: 20%;
-    }
-
-    input[type=button] {
-        margin-left: 60%;
-        border-radius: 15px;
-        margin-top: -8.4%;
-    }
-
-    input[type=submit]:hover,
-    input[type=button]:hover {
-        opacity: 0.8;
-    }
-
-    #patientForm {
+        #patientForm {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
 
     
-
-    #patientForm .sizeinput {
-        width: 75%;
-    }
-
-    #patientForm label {
-        padding-right: 12px;
-    }
 
     footer {
         background-color: #3AA9B0;
@@ -258,18 +214,7 @@ header button:hover {
         align-items: center;
         width:100%
     }
-
-    header img {
-        height: 45px;
-        width: 55px;
-        margin-left: 5%;
-    }
-
-    header h2 {
-        color: white;
-        font-size: 15px;
-        margin-left: 25%;
-    }
+ 
 
     nav {
         height: 45px;
@@ -301,24 +246,6 @@ header button:hover {
         color: white;
         padding-bottom: 3px;
         opacity: 0.7;
-    }
-
-    header button {
-        background-color: #1D6B99;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 8%;
-        float: left;
-        border-radius: 7px;
-        margin-left: 28%;
-        margin-right: 20px;
-    }
-
-    header button:hover {
-        opacity: 0.8;
     }
 
 }
