@@ -342,6 +342,7 @@ header button:hover {
 }
 
 /* Improved Styles for Mobile Devices */
+/* Improved Styles for Mobile Devices */
 @media only screen and (max-width: 600px) {
     /* Adjust styles for mobile screens here */
     .container {
@@ -378,12 +379,26 @@ header button:hover {
     }
 
     nav ul {
-        flex-direction: column; /* Stack navigation links vertically on mobile */
-        align-items: center; /* Center navigation links on mobile */
+        flex-direction: row; /* Display navigation links in a row */
+        justify-content: space-around; /* Space navigation links evenly */
+        align-items: center; /* Center navigation links vertically */
+        padding: 0; /* Remove default padding */
     }
 
     nav li {
         margin-right: 0; /* Remove margin between navigation links on mobile */
+        list-style: none; /* Remove default list style */
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        display: inline-block;
+        font-size: 17px;
+        border-radius: 6px; /* Add rounded corners to navigation links */
+        margin: 5px; /* Add margin to space navigation links */
     }
 
     header button {
@@ -391,5 +406,6 @@ header button:hover {
         margin-left: 20%; /* Adjust button margin for mobile screens */
     }
 }
+
 
 
