@@ -167,31 +167,52 @@ header button:hover {
 
 /* Improved Styles for Mobile Devices */
 /* Mobile Styles */
-@media (max-width: 767px) {
-    body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin-left: 0;
     }
 
-    .container {
-        width: 100%;
+    .leftpart,
+    .rightpart {
         max-width: 100%;
-        padding: 0 10px;
-        box-sizing: border-box;
     }
 
     #patientForm .sizeinput {
         width: 100%;
     }
 
+    header img {
+        height: 60px;
+        width: 70px;
+        margin-left: 5%;
+    }
+
     header h2 {
-        margin-left: 10px;
+        font-size: 20px;
+        margin-left: 20%;
     }
 
     header button {
-        width: 30%;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 20%;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header img {
+        height: 50px;
+        width: 60px;
+        margin-left: 5%;
+    }
+
+    header h2 {
+        font-size: 15px;
+        margin-left: 20%;
+    }
+
+    header button {
+        margin-left: 20%;
+        margin-right: 20px;
     }
 }
