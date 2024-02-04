@@ -167,45 +167,37 @@ header button:hover {
 
 /* Improved Styles for Mobile Devices */
 @media only screen and (max-width: 600px) {
-  /* Ensure that the body does not have a fixed width or margins that cause overflow */
   body {
-    width: auto;
     margin: 0;
     padding: 0;
   }
 
-  /* Set the width of form elements to be responsive and centered */
-  input[type="text"], textarea, select {
-    width: calc(100% - 20px); /* Assuming a total padding of 20px */
-    box-sizing: border-box; /* Include padding and border in the element's width */
-    margin: 10px auto; /* Vertical margin with auto horizontal margin for centering */
-    display: block;
+  .container {
+    flex-direction: column;
+    margin-left: 0;
+    padding: 0;
   }
 
-  /* Align radio buttons and labels properly */
-  label {
-    display: block;
-    margin: 10px auto;
-  }
-
-  input[type="radio"] {
-    margin: 0 5px 0 0;
-  }
-
-  /* Style the buttons to fit within the view and to be centered */
+  input[type=text],
+  input[type=date],
+  select,
+  textarea,
   button {
-    width: calc(100% - 20px); /* Adjust button width */
-    margin: 10px auto; /* Center the button with auto margins */
+    width: calc(100% - 24px);
+    margin: 8px auto;
     display: block;
-  }
-
-  /* Adjust the layout of the elements to prevent horizontal overflow */
-  .container, .row, .column, .form-group {
-    width: 100%;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
   }
 
-  /* Additional styles if needed */
+  /* Adjust the size of radio buttons and checkboxes */
+  input[type=radio],
+  input[type=checkbox] {
+    margin: 0 0.5em 0 0;
+  }
+
+  /* Ensure labels are also properly aligned */
+  label {
+    display: block;
+    margin: 0.5em auto;
+  }
 }
