@@ -166,38 +166,42 @@ header button:hover {
 
 
 /* Improved Styles for Mobile Devices */
+/* Mobile Styles */
 @media only screen and (max-width: 600px) {
+  /* Add your mobile-specific styles here */
   body {
-    margin: 0;
-    padding: 0;
+    font-size: 16px; /* Adjust font size for better readability */
+    background-color: #f2f2f2; /* Set a background color */
   }
 
+  /* Center align text elements */
+  h1, h2, p {
+    text-align: center;
+  }
+
+  /* Adjust padding and margins for better spacing */
   .container {
-    flex-direction: column;
-    margin-left: 0;
-    padding: 0;
+    padding: 10px; /* Add padding to container */
   }
 
-  input[type=text],
-  input[type=date],
-  select,
-  textarea,
+  /* Make images responsive within the container */
+  img {
+    max-width: 100%; /* Ensure images don't overflow */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Adjust button styling */
   button {
-    width: calc(100% - 24px);
-    margin: 8px auto;
-    display: block;
-    box-sizing: border-box;
+    display: block; /* Make buttons full width */
+    margin: 10px auto; /* Center-align buttons with margin */
+    background-color: #007bff; /* Customize button color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Add padding to buttons */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
   }
 
-  /* Adjust the size of radio buttons and checkboxes */
-  input[type=radio],
-  input[type=checkbox] {
-    margin: 0 0.5em 0 0;
-  }
-
-  /* Ensure labels are also properly aligned */
-  label {
-    display: block;
-    margin: 0.5em auto;
-  }
+  /* Any other mobile-specific styles can be added here */
 }
+
