@@ -276,8 +276,10 @@ header button:hover {
 
     header h2 {
         color: white;
+        text
         font-size: 12px; /* Smaller font size */
         margin-left: 5%; /* Adjust margin for better alignment */
+        text-align: center;
     }
 
     nav {
