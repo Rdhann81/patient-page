@@ -169,6 +169,12 @@ header button:hover {
 /* Mobile Styles */
 @media only screen and (max-width: 767px) {
     /* Adjust the width of the sizeinput class in the patientForm */
+    #patientForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+    
     #patientForm .sizeinput {
         width: 100%;
     }
@@ -191,13 +197,14 @@ header button:hover {
 
     /* Adjust the margin-top of the nav */
     nav {
-        margin-top: 0;
+        margin-top: -10%;
     }
 
     /* Adjust the display of the nav ul */
     nav ul {
-        display: block;
-        text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
     }
 
     /* Adjust the margin-right of the nav li */
@@ -207,8 +214,19 @@ header button:hover {
 
     /* Adjust the padding of the nav a */
     nav a {
-        padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    display: inline-block;
+    font-size: 7px;
     }
+
+    nav a:hover {
+    border-radius: 3px;
+    color: white;
+    opacity: 0.7;
+}
 
     /* Adjust the margin-top of the footer */
     footer {
@@ -218,5 +236,9 @@ header button:hover {
     header button {
         margin-left: 20%;
         margin-right: 20px;
+    }
+
+    header button:hover {
+    opacity: 0.8;
     }
 }
