@@ -215,7 +215,8 @@ header button:hover {
     }
 
     input[type=button] {
-        margin-top: 5%; /* Add margin for separation */
+        margin-top: 1%; /* Add margin for separation */
+    
     }
 
     input[type=submit]:hover,
