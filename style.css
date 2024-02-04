@@ -176,13 +176,7 @@ header button:hover {
         padding: 0;
     }
 
-    .container {
-        display: flex;
-        flex-direction: row;
-        padding: 16px;
-        margin-left: 5%;
-        margin-top: 50px;
-    }
+ 
 
     input[type=text],
     input[type=date],
@@ -229,20 +223,11 @@ header button:hover {
 
     #patientForm {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
     }
 
-    .leftpart,
-    .rightpart {
-        max-width: 45%;
-    }
-
-    .rightpart {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+    
 
     #patientForm .sizeinput {
         width: 75%;
@@ -261,6 +246,7 @@ header button:hover {
         padding-bottom: 1px;
         margin-top: 66px;
         font-weight: bold;
+        width:100%
     }
 
     header {
@@ -270,17 +256,18 @@ header button:hover {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width:100%
     }
 
     header img {
-        height: 75px;
-        width: 85px;
+        height: 45px;
+        width: 55px;
         margin-left: 5%;
     }
 
     header h2 {
         color: white;
-        font-size: 25px;
+        font-size: 15px;
         margin-left: 25%;
     }
 
@@ -306,7 +293,7 @@ header button:hover {
         font-weight: bold;
         padding: 10px;
         display: inline-block;
-        font-size: 17px;
+        font-size: 10px;
     }
 
     nav a:hover {
