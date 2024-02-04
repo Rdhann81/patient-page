@@ -236,10 +236,7 @@ header button:hover {
         margin-top: 20px;
     }
 
-    header button {
-        margin-left: 20%;
-        margin-right: 20px;
-    }
+  
 
     header button:hover {
     opacity: 0.8;
