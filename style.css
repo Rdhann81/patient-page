@@ -131,9 +131,6 @@ nav li {
 }
 
 nav a {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
     text-decoration: none;
     color: white;
     font-weight: bold;
