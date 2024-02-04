@@ -175,154 +175,220 @@ header button:hover {
     }
 }
 
+/* Common styles for all screen sizes */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
 
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+input[type=text],
+input[type=date],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #F4F4F5;
+}
+
+input[type=radio] {
+    margin: 10px 0;
+}
+
+input[type=submit],
+input[type=button] {
+    background-color: #119988;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 5%;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    float: left;
+    border-radius: 15px;
+    margin-left: 20%;
+}
+
+input[type=button] {
+    margin-left: 60%;
+    border-radius: 15px;
+    margin-top: -8.4%;
+}
+
+input[type=submit]:hover,
+input[type=button]:hover {
+    opacity: 0.8;
+}
+
+#patientForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.leftpart,
+.rightpart {
+    max-width: 45%;
+}
+
+.rightpart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#patientForm .sizeinput {
+    width: 75%;
+}
+
+#patientForm label {
+    padding-right: 12px;
+}
+
+footer {
+    background-color: #3AA9B0;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 66px;
+    font-weight: bold;
+}
+
+header {
+    background-color: #3AA9B0;
+    padding: 10px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 75px;
+    width: 85px;
+    margin-left: 5%;
+}
+
+header h2 {
+    color: white;
+    font-size: 25px;
+    margin-left: 25%;
+}
+
+nav {
+    height: 45px;
+    margin-top: -16px;
+    background-color: #1D6B99;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+    font-size: 17px;
+}
+
+nav a:hover {
+    border-radius: 6px;
+    color: white;
+    padding-bottom: 3px;
+    opacity: 0.7;
+}
+
+header button {
+    background-color: #1D6B99;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 8%;
+    float: left;
+    border-radius: 7px;
+    margin-left: 28%;
+    margin-right: 20px;
+}
+
+header button:hover {
+    opacity: 0.8;
+}
+
+/* Improved Styles for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for mobile screens here */
     .container {
-        display: flex;
-        flex-direction: row;
-        padding: 16px;
-        margin-left: 5%;
-        margin-top: 50px;
-    }
-
-    input[type=text],
-    input[type=date],
-    select,
-    textarea {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-        border-radius: 10px;
-        background-color: #F4F4F5;
-    }
-
-    input[type=radio] {
-        margin: 10px 0;
+        margin-left: 2%; /* Adjust margin for smaller screens */
     }
 
     input[type=submit],
     input[type=button] {
-        background-color: #119988;
-        color: white;
-        padding: 12px 16px; /* Slightly smaller padding */
-        margin-top: 5%;
-        border: none;
-        cursor: pointer;
-        width: 100%; /* Full width for mobile */
-        border-radius: 7px; /* Slightly smaller border-radius */
-        margin-left: 0; /* Reset margin for mobile */
+        width: 40%; /* Adjust button width for mobile screens */
+        margin-left: 10%; /* Adjust button margin for mobile screens */
     }
 
     input[type=button] {
-        margin-top: 5%; /* Add margin for separation */
-    }
-
-    input[type=submit]:hover,
-    input[type=button]:hover {
-        opacity: 0.8;
+        margin-left: 30%; /* Adjust button margin for mobile screens */
     }
 
     #patientForm {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column; /* Stack form elements vertically on mobile */
     }
 
     .leftpart,
     .rightpart {
-        max-width: 45%;
-    }
-
-    .rightpart {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #patientForm .sizeinput {
-        width: 75%;
-    }
-
-    #patientForm label {
-        padding-right: 12px;
-    }
-
-    footer {
-        background-color: #3AA9B0;
-        height: 40px;
-        color: white;
-        text-align: center;
-        padding-top: 1px;
-        padding-bottom: 1px;
-        margin-top: 66px;
-        font-weight: bold;
-    }
-
-    header {
-        background-color: #3AA9B0;
-        padding: 10px;
-        height: 70px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        max-width: 100%; /* Allow content to take full width on mobile */
     }
 
     header img {
-        height: 75px;
-        width: 85px;
-        margin-left: 5%;
+        height: 60px; /* Adjust header image size for mobile screens */
+        width: 70px; /* Adjust header image size for mobile screens */
     }
 
     header h2 {
-        color: white;
-        font-size: 20px; /* Smaller font size */
-        margin-left: 5%; /* Adjust margin for better alignment */
-    }
-
-    nav {
-        height: auto; /* Remove fixed height */
-        background-color: #1D6B99;
-        overflow: hidden; /* Hide overflowing text */
+        font-size: 20px; /* Adjust header text size for mobile screens */
+        margin-left: 10%; /* Adjust header text margin for mobile screens */
     }
 
     nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        flex-direction: column; /* Stack navigation links vertically on mobile */
+        align-items: center; /* Center navigation links on mobile */
     }
 
     nav li {
-        margin-right: 15px;
-        white-space: nowrap; /* Prevent text from breaking into multiple lines */
+        margin-right: 0; /* Remove margin between navigation links on mobile */
     }
-
-    nav a {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        padding: 10px;
-        font-size: 17px;
-    }
-
 
     header button {
-        background-color: #1D6B99;
-        color: white;
-        padding: 12px 16px; /* Slightly smaller padding */
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 80%; /* Slightly smaller width */
-        border-radius: 7px; /* Slightly smaller border-radius */
-        margin-left: 0; /* Reset margin for mobile */
-        margin-right: 0; /* Reset margin for mobile */
-    }
-
-    header button:hover {
-        opacity: 0.8;
+        width: 60%; /* Adjust button width for mobile screens */
+        margin-left: 20%; /* Adjust button margin for mobile screens */
     }
 }
 
