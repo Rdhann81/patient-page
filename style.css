@@ -137,9 +137,7 @@ nav a {
     padding: 10px;
     display: inline-block;
     font-size: 17px;
-    flex-direction: row; /* Display navigation links in a row */
-    justify-content: space-around; /* Space navigation links evenly */
-    align-items: center; /* Center navigation links vertically */
+    
 
 }
 
@@ -318,6 +316,9 @@ nav a {
     padding: 10px;
     display: inline-block;
     font-size: 17px;
+    flex-direction: row; /* Display navigation links in a row */
+    justify-content: space-around; /* Space navigation links evenly */
+    align-items: center; /* Center navigation links vertically */
 }
 
 nav a:hover {
