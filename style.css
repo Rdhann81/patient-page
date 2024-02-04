@@ -110,7 +110,7 @@ header img {
 
 header h2 {
     color: white;
-    font-size: 10px;
+    font-size: 25px;
     margin-left: 25%;
 }
 
@@ -196,7 +196,7 @@ header button:hover {
 
     /* Adjust the margin-left of the header h2 */
     header h2 {
-        margin-left: 10px;
+        margin-left: 15px;
     }
 
     /* Adjust the margin-left and margin-right of the header button */
