@@ -167,49 +167,54 @@ header button:hover {
 
 /* Improved Styles for Mobile Devices */
 /* Mobile Styles */
-@media only screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        margin-left: 0;
-    }
-
-    .leftpart,
-    .rightpart {
-        max-width: 100%;
-    }
-
+@media only screen and (max-width: 767px) {
+    /* Adjust the width of the sizeinput class in the patientForm */
     #patientForm .sizeinput {
         width: 100%;
     }
 
+    /* Adjust the margin-left of the header img */
     header img {
-        height: 60px;
-        width: 70px;
-        margin-left: 5%;
+        margin-left: 10px;
     }
 
+    /* Adjust the margin-left of the header h2 */
     header h2 {
-        font-size: 20px;
-        margin-left: 20%;
+        margin-left: 10px;
     }
 
+    /* Adjust the margin-left and margin-right of the header button */
     header button {
-        margin-left: 20%;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* Adjust the margin-top of the nav */
+    nav {
+        margin-top: 0;
+    }
+
+    /* Adjust the display of the nav ul */
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    /* Adjust the margin-right of the nav li */
+    nav li {
+        margin-right: 0;
+    }
+
+    /* Adjust the padding of the nav a */
+    nav a {
+        padding: 5px;
+    }
+
+    /* Adjust the margin-top of the footer */
+    footer {
+        margin-top: 20px;
     }
 }
-
-@media only screen and (max-width: 480px) {
-    header img {
-        height: 50px;
-        width: 60px;
-        margin-left: 5%;
-    }
-
-    header h2 {
-        font-size: 15px;
-        margin-left: 20%;
-    }
 
     header button {
         margin-left: 20%;
