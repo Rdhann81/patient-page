@@ -182,9 +182,16 @@ header button:hover {
         width: 100%;
     }
 
+    header {
+        width: 100%;
+    }
+    
+
     /* Adjust the margin-left of the header img */
     header img {
-        margin-left: 10px;
+    height: 45px;
+    width:  50px;
+    margin-left: 5%;
     }
 
     /* Adjust the margin-left of the header h2 */
@@ -193,10 +200,7 @@ header button:hover {
     }
 
     /* Adjust the margin-left and margin-right of the header button */
-    header button {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+
 
     /* Adjust the margin-top of the nav */
     nav {
@@ -234,11 +238,26 @@ header button:hover {
     /* Adjust the margin-top of the footer */
     footer {
         margin-top: 20px;
+        width: 100%
     }
 
-  
+  header button {
+    background-color: #1D6B99;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 8%;
+    float: left;
+    border-radius: 7px;
+    margin-left: 28%;
+    margin-right: 20px;
+}
 
-    header button:hover {
+header button:hover {
     opacity: 0.8;
-    }
+}
+
+
 }
