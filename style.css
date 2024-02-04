@@ -179,15 +179,12 @@ header button:hover {
         width: 100%;
     }
 
-    header {
-        width: 100%;
-    }
+    
     
 
     /* Adjust the margin-left of the header img */
     header img {
-    height: 45px;
-    width:  50px;
+    
     margin-left: 5%;
     }
 
@@ -238,23 +235,7 @@ header button:hover {
         width: 100%
     }
 
-  header button {
-    background-color: #1D6B99;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 8%;
-    float: left;
-    border-radius: 7px;
-    margin-left: 28%;
-    margin-right: 20px;
-}
-
-header button:hover {
-    opacity: 0.8;
-}
+  
 
 
 }
