@@ -167,71 +167,59 @@ header button:hover {
 
 /* Improved Styles for Mobile Devices */
 @media (max-width: 768px) {
-
-    /* Ensure everything is contained within the viewport width */
-    html,
-    body {
-        width: 100%;
+    /* Prevent horizontal scroll */
+    html, body {
+        max-width: 100%;
         overflow-x: hidden;
-        /* Prevent horizontal scroll */
     }
 
-    /* Ensure the header, navigation, and footer are 100% width */
-    header,
-    nav,
-    footer {
+    /* Ensure that all primary containers take up only the viewport's width */
+    header, nav, footer, .container, #patientForm {
         width: 100%;
+        box-sizing: border-box; /* Include padding in the element's total width */
+    }
+
+    /* Ensure the content within the containers does not exceed the screen size */
+    .container > *, .leftpart, .rightpart, .button-container {
+        max-width: 100%;
         box-sizing: border-box;
-        /* Include padding and border in the width */
+        padding: 0 10px; /* Add padding if needed but make sure it's within 100% width */
     }
 
-    /* Navigation list to be full width */
+    /* Make sure all images are responsive and do not force overflow */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Full width buttons and centered */
+    input[type=submit], input[type=button] {
+        width: 100%; /* Full width */
+        margin: 10px 0; /* Spacing on the top and bottom */
+        box-sizing: border-box;
+    }
+
+    /* Navigation menu adjustments */
     nav ul {
-        width: 100%;
         padding: 0;
-        /* Remove padding */
         margin: 0;
-        /* Remove margins */
-        list-style: none;
-        /* Remove list styles */
-        display: flex;
-        justify-content: space-around;
-        /* Distribute space evenly */
-        align-items: center;
-        /* Center items vertically */
-        flex-wrap: wrap;
-        /* Allow items to wrap */
+        list-style-type: none;
     }
 
     nav li {
-        width: 100%;
-        /* Full width navigation items */
-        text-align: center;
-        /* Center text */
+        width: auto; /* Auto width based on content */
     }
 
     nav a {
-        padding: 10px 0;
-        /* Increase padding for tap targets */
-        display: block;
-        /* Block level links for easier tap */
-    }
-
-    /* Remove any floats on buttons and align them centrally */
-    header button,
-    input[type=submit],
-    input[type=button] {
-        float: none;
-        display: block;
         width: auto;
-        margin: 10px auto;
-        /* Center align */
+        padding: 10px;
+        box-sizing: border-box;
     }
 
-    /* Adjust the footer to stick to the bottom and be full width */
+    /* Footer adjustments */
     footer {
-        position: relative;
-        bottom: 0;
-        left: 0;
+        width: 100%;
+        padding: 8px 0; /* Adjust padding as needed */
     }
 }
+
