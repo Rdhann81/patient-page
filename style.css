@@ -184,14 +184,7 @@ header button:hover {
     margin-top: 50px;
 }
 
- 
-        #patientForm {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    
+   
 
     footer {
         background-color: #3AA9B0;
