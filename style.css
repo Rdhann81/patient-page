@@ -174,72 +174,10 @@ header button:hover {
     }
 
     body {
-        max-width: 100%;
-        overflow-x: hidden;
         height: 100vh;
         height: webkit-fill-available;
     }
 
-    /* Ensure that all primary containers take up only the viewport's width */
-    header,
-    nav,
-    footer,
-    .container,
-    #patientForm {
-        width: 100%;
-        box-sizing: border-box;
-        /* Include padding in the element's total width */
-    }
-
-    /* Ensure the content within the containers does not exceed the screen size */
-    .container>*,
-    .leftpart,
-    .rightpart,
-    .button-container {
-        max-width: 100%;
-        box-sizing: border-box;
-        padding: 0 10px;
-        /* Add padding if needed but make sure it's within 100% width */
-    }
-
-    /* Make sure all images are responsive and do not force overflow */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Full width buttons and centered */
-    input[type=submit],
-    input[type=button] {
-        width: 100%;
-        /* Full width */
-        margin: 10px 0;
-        /* Spacing on the top and bottom */
-        box-sizing: border-box;
-    }
-
-    /* Navigation menu adjustments */
-    nav ul {
-        padding: 0;
-        margin: 0;
-        list-style-type: none;
-    }
-
-    nav li {
-        width: auto;
-        /* Auto width based on content */
-    }
-
-    nav a {
-        width: auto;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-
-    /* Footer adjustments */
-    footer {
-        width: 100%;
-        padding: 8px 0;
-        /* Adjust padding as needed */
-    }
 }
+
+      
