@@ -1,3 +1,97 @@
+/* Improved Styles for Mobile Devices */
+@media (max-width: 768px) {
+
+    /* Adjust the container to stack its children vertically */
+    .container {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 8px;
+        /* Reduced padding for smaller screens */
+    }
+
+    /* Adjust form inputs, selects, and textareas to take full width */
+    input[type=text],
+    input[type=date],
+    select,
+    textarea {
+        width: 100%;
+        /* Full width for smaller screens */
+        margin: 8px 0;
+        /* Adjust margin for better spacing */
+    }
+
+    /* Adjust the submit and button elements to be full width and properly spaced */
+    input[type=submit],
+    input[type=button] {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+        /* Increase spacing between buttons */
+    }
+
+    /* Ensure the patient form adapts to a vertical layout */
+    #patientForm {
+        flex-direction: column;
+    }
+
+    /* Adjust left and right parts of the form to take full width */
+    .leftpart,
+    .rightpart {
+        max-width: 100%;
+    }
+
+    /* Adjust header and navigation styles for mobile */
+    header img {
+        height: auto;
+        /* Make the logo responsive */
+        width: auto;
+        /* Adjust width to maintain aspect ratio */
+        margin-left: 10%;
+        /* Adjust logo positioning */
+    }
+
+    header h2 {
+        font-size: 20px;
+        /* Adjust font size for smaller screens */
+        margin-left: 15%;
+        /* Adjust heading positioning */
+    }
+
+    /* Adjust navigation bar for mobile */
+    nav ul {
+        justify-content: space-around;
+        /* Adjust spacing around navigation items */
+    }
+
+    nav a {
+        font-size: 15px;
+        /* Adjust font size for easier readability */
+        padding: 8px;
+        /* Adjust padding for better touch targets */
+    }
+
+    /* Adjust button in header for smaller screens */
+    header button {
+        width: auto;
+        /* Allow the button to adjust based on content */
+        padding: 10px;
+        /* Adjust padding for smaller screens */
+        margin-left: 10%;
+        /* Adjust margin to align with mobile layout */
+        font-size: 14px;
+        /* Adjust font size for better readability */
+    }
+
+    /* Footer adjustments for mobile */
+    footer {
+        font-size: 14px;
+        /* Adjust font size for readability on small screens */
+        padding: 8px 0;
+        /* Adjust padding for consistent spacing */
+    }
+}
+
+
 /* Common styles for all screen sizes */
 body {
     font-family: Arial, Helvetica, sans-serif;
