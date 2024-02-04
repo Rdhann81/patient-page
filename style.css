@@ -167,23 +167,39 @@ header button:hover {
 
 /* Improved Styles for Mobile Devices */
 @media (max-width: 768px) {
+
     /* Prevent horizontal scroll */
-    html, body {
+    html {
+        height: webkit-fill-available;
+    }
+
+    body {
         max-width: 100%;
         overflow-x: hidden;
+        height: 100vh;
+        height: webkit-fill-available;
     }
 
     /* Ensure that all primary containers take up only the viewport's width */
-    header, nav, footer, .container, #patientForm {
+    header,
+    nav,
+    footer,
+    .container,
+    #patientForm {
         width: 100%;
-        box-sizing: border-box; /* Include padding in the element's total width */
+        box-sizing: border-box;
+        /* Include padding in the element's total width */
     }
 
     /* Ensure the content within the containers does not exceed the screen size */
-    .container > *, .leftpart, .rightpart, .button-container {
+    .container>*,
+    .leftpart,
+    .rightpart,
+    .button-container {
         max-width: 100%;
         box-sizing: border-box;
-        padding: 0 10px; /* Add padding if needed but make sure it's within 100% width */
+        padding: 0 10px;
+        /* Add padding if needed but make sure it's within 100% width */
     }
 
     /* Make sure all images are responsive and do not force overflow */
@@ -193,9 +209,12 @@ header button:hover {
     }
 
     /* Full width buttons and centered */
-    input[type=submit], input[type=button] {
-        width: 100%; /* Full width */
-        margin: 10px 0; /* Spacing on the top and bottom */
+    input[type=submit],
+    input[type=button] {
+        width: 100%;
+        /* Full width */
+        margin: 10px 0;
+        /* Spacing on the top and bottom */
         box-sizing: border-box;
     }
 
@@ -207,7 +226,8 @@ header button:hover {
     }
 
     nav li {
-        width: auto; /* Auto width based on content */
+        width: auto;
+        /* Auto width based on content */
     }
 
     nav a {
@@ -219,7 +239,7 @@ header button:hover {
     /* Footer adjustments */
     footer {
         width: 100%;
-        padding: 8px 0; /* Adjust padding as needed */
+        padding: 8px 0;
+        /* Adjust padding as needed */
     }
 }
-
