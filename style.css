@@ -35,11 +35,10 @@
     }
 
     nav ul {
-        flex-direction: row; /* Display navigation links in a row */
-        justify-content: space-around; /* Space navigation links evenly */
-        align-items: center; /* Center navigation links vertically */
-        padding: 0; /* Remove default padding */
-    }
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly
+}
 
     nav li {
         margin-right: 0; /* Remove margin between navigation links on mobile */
