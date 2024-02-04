@@ -276,7 +276,7 @@ header button:hover {
 
     header h2 {
         color: white;
-        font-size: 20px; /* Smaller font size */
+        font-size: 15px; /* Smaller font size */
         margin-left: 5%; /* Adjust margin for better alignment */
     }
 
@@ -304,11 +304,11 @@ header button:hover {
         font-weight: bold;
         padding: 10px;
         display: inline-block;
-        font-size: 17px;
+        font-size: 12px;
     }
 
     nav a:hover {
-        border-radius: 6px;
+        border-radius: 5px;
         color: white;
         padding-bottom: 3px;
         opacity: 0.7;
